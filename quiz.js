@@ -8,10 +8,10 @@
 //2.Natural son berilgan,uning oxirgi raqamini toping.
 
 // function myFunction(a){
-//     let b=String(a).split("").map(num => Number(num))
-//   return b[b.length-1]
+//     let b =  String(a).split("")
+//  return b[b.length-1]
 //   }
-//       console.log(myFunction(753));
+//       console.log(myFunction(7536575485));
 
 //3.Kadrlar bo'limida ish haqqini so’mda oladigan 3 nafar xodim ishlaydi. Ulardan eng yuqori maosh oluvchining maoshi eng kam maosh
 //oluvchidan qancha farq qilishini aniqlash talab etiladi.
