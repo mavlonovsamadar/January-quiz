@@ -55,9 +55,95 @@
 
 // console.log(fizzArray(5,10));
 
-function countHi( b){
-    let a='hi'
-    return b.split(a).length - 1 } 
-    console.log(countHi('abc hi ho'));
-    console.log(countHi('ABChi hi'));
-    //
+//7.Return the number of times that the string "hi" appears anywhere in the given string.
+
+// function countHi( b){
+//     let a = 'hi'
+//     return b.split(a).length - 1 } 
+//     console.log(countHi('abc hi ho'));
+
+
+//8.Return true if the string "cat" and "dog" appear the same number of times in the given string.
+
+// function catDog(str) {
+//     let dog = 0;
+//     let cat = 0;
+
+//     for (let i = 0; i < str.length - 2; i++) {
+//         if (str.charAt(i) == 'c' && str.charAt(i + 1) == 'a' && str.charAt(i + 2) == 't') { cat++; }
+
+//         else if (str.charAt(i) == 'd' && str.charAt(i + 1) == 'o' && str.charAt(i + 2) == 'g') { dog++; }
+//     }
+
+//     if (dog == cat)
+//         return true;
+
+//     else return false;
+// }
+// console.log(catDog('catdog'));
+// console.log(catDog('1cat1cadodog'));
+// console.log(catDog(('catcat')));
+
+//9.Given a string, compute recursively a new string where all the adjacent chars are now separated by a "*".
+
+// function allStar(str) {
+//     return str.split('').join('*')
+// }
+// console.log(allStar("abc"));
+// console.log(allStar("hello"));
+
+//10.Given a string and a non-empty substring sub, compute recursively the number of times that sub appears in the string, without the sub strings overlapping.
+
+// function strCount(a, b) {
+//     return a.split(b).length - 1
+// }
+// console.log(strCount('catcowcat', 'cat'));
+// console.log(strCount('catcowcat', 'cow'));
+// console.log(strCount('catcowcat', 'dog')); 
+
+
+//11.Given an array of strings, return a new array containing the first N strings. N will be in the range 1..length.
+
+// function wordsFront(a, n) {
+//     return a.slice(0,n)
+// }
+// console.log(wordsFront(['a', 'b', 'c', 'd'], 1));
+// console.log(wordsFront(['a', 'b', 'c', 'd'], 2));
+// console.log(wordsFront(['a', 'b', 'c', 'd'], 3));
+
+
+//12.Create a function that takes two arrays and insert the second array in the middle of the first array.
+
+// function tuckIn(arr1, arr2) {
+//    arr1.splice(1,0, ...arr2) 
+//    return arr1
+// }
+// console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
+// console.log(tuckIn([15,150], [45, 75, 35]))
+// console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));
+
+
+//13.Take an array of integers (positive or negative or both) and return the sum of the absolute value of each element.
+
+// function getAbsSum(arr) {
+//     return arr.map((item)=>Math.abs(item)).reduce((a,b)=> a+b)
+// }
+
+// console.log(getAbsSum([2, -1, 4, 8, 10]));
+// console.log(getAbsSum([-3, -4, -10, -2, -3]));
+// console.log(getAbsSum([2, 4, 6, 8, 10]));
+// console.log(getAbsSum([-1]));
+
+
+//14. 2 ta parametrni o'z ichiga olgan funksiya yarating ("Start", "Stop") va shu oraliqda bo'lgan juft sonlarni yig'indisini qaytaring
+
+// function sum(a,b) {
+//     let count = 0;
+//     for(let i=a; i<=b; i++){
+//         if(i%2==0){ count +=i }
+//     }
+// return count
+// }
+// console.log(sum(10,20));
+// console.log(sum(51,150));
+// console.log(sum(63,97));
